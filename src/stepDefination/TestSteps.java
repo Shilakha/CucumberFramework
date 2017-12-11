@@ -55,22 +55,28 @@ public class TestSteps {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//button[@class='vh79eN']")).click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		// driver.findElement(By.xpath("//div[@class='_3BTv9X'")).click();
-		driver.findElement(By.cssSelector("._3BTv9X")).click();
+		
+		 driver.findElement(By.xpath("//div[@class='_3BTv9X']")).click();
+		//driver.findElement(By.cssSelector("._3BTv9X")).click();
 		// driver.findElement(By.xpath(".//*[@id='swatch-3-size']/a")).click();
-
+		 JavascriptExecutor jse = (JavascriptExecutor)driver;
+			//for scrolling to bottom
+			jse.executeScript("window.scrollBy(0,250)", "");
 		
 
 		for (String winHandle : driver.getWindowHandles()) {
 			driver.switchTo().window(winHandle);
 		}
+		
+		jse.executeScript("window.scrollBy(0,250)", "");
+		jse.executeScript("scroll(0, -250);");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.findElement(By.xpath(".//*[@id='swatch-3-size']/a")).click();
+		//jse.executeScript("window.scrollBy(0,250)", "");
+		driver.findElement(By.xpath("//*[@id='swatch-2-size']/a")).click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//button[@class='_2AkmmA _2Npkh4 _2MWPVK']")).click();
-		JavascriptExecutor jse = (JavascriptExecutor)driver;
-		//for scrolling to bottom
-		jse.executeScript("window.scrollBy(0,250)", "");
+		
+		//jse.executeScript("scroll(0, -250);");
 		
 		//for left scrolling
 		//jse.executeScript("window.scrollBy(-2000,0)","");
