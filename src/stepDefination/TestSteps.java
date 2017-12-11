@@ -69,8 +69,21 @@ public class TestSteps {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//button[@class='_2AkmmA _2Npkh4 _2MWPVK']")).click();
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		//for scrolling to bottom
 		jse.executeScript("window.scrollBy(0,250)", "");
-
+		
+		//for left scrolling
+		//jse.executeScript("window.scrollBy(-2000,0)","");
+		
+		
+		//for right scrolling
+		//jse.executeScript("window.scrollBy(2000,0)","");
+		
+		
+		//for scrolling to upward
+		//		jse.executeScript("window.scrollBy(0,-250)", "");
+		//		OR,
+		//		jse.executeScript("scroll(0, -250);");
 	}
 
 }
