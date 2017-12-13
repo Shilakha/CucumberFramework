@@ -60,5 +60,6 @@
 	<classpathentry kind="lib" path="D:/Automation/cucumber/Jars/selenium-server-3.6.0/libs/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="lib" path="D:/Automation/cucumber/Jars/gherkin-5.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/shilakha/Desktop/selenium-server-standalone-3.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shilakha/Downloads/testng-6.7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
