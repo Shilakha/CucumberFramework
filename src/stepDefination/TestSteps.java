@@ -11,6 +11,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.cucumber.listener.Reporter;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 
@@ -20,6 +22,7 @@ public class TestSteps {
 	
 	@Given("^user navigates to https://www\\.flipkart\\.com/$")
 	public void user_navigates_to_https_www_flipkart_com() throws Exception {
+		//Reporter.addStepLog("Step Log message goes here");
 		// Write code here that turns the phrase above into concrete actions
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\shilakha\\Desktop\\chromedriver.exe");
 		driver = new ChromeDriver();
@@ -86,7 +89,7 @@ public class TestSteps {
 			driver.switchTo().window(winHandle);
 		}
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.findElement(By.xpath("//button[text()= 'BUY NOW' or text() = 'Buy']")).click();
+		driver.findElement(By.xpath("//button[text()= 'BUY NOW' or text() = 'Buy' or text() = 'GO TO CART']")).click();
 
 	}
 }
