@@ -11,7 +11,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.cucumber.listener.Reporter;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
