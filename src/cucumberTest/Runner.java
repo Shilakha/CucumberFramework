@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "Feature", glue = {
 		"src/stepDefination" },
-plugin =  {"pretty","html:target/html", "json:cucumber.json"})
+plugin ={"json:target/cucumber.json"})
 
 public class Runner {
 
