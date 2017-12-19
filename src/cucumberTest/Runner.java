@@ -6,9 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/Feature", glue = {
-		"src/stepDefination" },
-plugin ={"json:target/cucumber.json"})
+@CucumberOptions(features ="/Flipkart/Features/Feature.feature", glue = {"src/stepDefination" },plugin ={"json:target/cucumber.json"})
 
 public class Runner {
 
