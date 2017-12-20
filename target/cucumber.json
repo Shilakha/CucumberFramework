@@ -1,0 +1,78 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Login Functionality",
+        "description": "",
+        "id": "flipkart-automation;login-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user navigates to https://www.flipkart.com/",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User enters \"username\" and \"password\" to LogIn",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "user logins into the site",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Search functionality",
+        "description": "",
+        "id": "flipkart-automation;search-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "User enters the product name to be search and add it to cart",
+            "match": {},
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          }
+        ]
+      }
+    ],
+    "name": "Flipkart automation",
+    "description": "\tDescription: This feature will test a LogIn and search functionality",
+    "id": "flipkart-automation",
+    "keyword": "Feature",
+    "uri": "src/Feature/test.feature"
+  }
+]
